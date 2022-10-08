@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+////// components
+import FirstComponent from './components/FirstComponent';
+import ComponenteTeste from './components/ComponenteTeste';
+import TemplateExpressions from './components/TemplateExpressions';
+import Events from './components/Events';
+import Challenge from './components/Challenge';
+
+
+//// styles / css
 import './App.css';
 
+
+///Os componentes JSX tem que estar envolto de uma div
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Fundamentos do React.js</h1>
+        <h2 className='teste'>O meu nome é Gabriel Maia</h2>
+        {/*Testando esses comentários */}
+        <FirstComponent/>
+        <ComponenteTeste/>
+        <TemplateExpressions/>
+        <Events/>
+        <Challenge/>
+        
     </div>
   );
 }
